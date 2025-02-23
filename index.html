@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITA A ROMA</title>
+    <style>
+    body {
+    
+    background-color: #f4f4f4;
+
+}    
+    
+h1 {
+    font-family: Oswald;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+       
+} 
+
+
+search-container {
+    display: flex;
+    justify-content: center;
+    allign-items: center;
+    height: 100wh;     
+}
+
+input {
+     padding: 8px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     outline: none;
+}
+button {
+     background-color: #f4f4f4;
+     color: black;
+     border: none;
+     padding: 8px 12px;
+     cursor: pointer;
+     border-radius: 4px;
+}
+
+}
+.section {
+     display: none; 
+     padding: 20px;
+     margin: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     background-color: #f9f9f9;
+     width: 300px;
+     text-align: center;
+}
+#26 {
+    background-color: #f4f4f4;
+    color: black;
+    border: #f4f4f4;
+    text-align: center;
+    display: block;
+
+}
+#27 {
+    
+    color: black;
+    border: #f4f4f4;
+    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#28 {
+    background-color: #f4f4f4;
+    color: black;
+    border: #f4f4f4;
+    text-align: center;
+   
+    
+
+}
+
+#A {
+   padding: 5px 5px;
+   background-color: green;
+   
+
+}
+h2 {
+    font-family: Oswald;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    font-size:20px;
+}
+
+img {    
+    position:fixed;
+    width: 230px;
+    height:230px;
+    top: 120px;
+    left: 190px; 
+
+}
+#bocca_della_verita {
+    width: 264px;
+    height:190px;    
+}
+#tomba_di_augusto {
+    width: 223px;
+    height:120px; 
+}    
+#palazzo_madama {
+    width: 223px;
+    height:120px; 
+}
+#piazza_navona_e_la_fontana_dei_quattro_fiumi {
+    width: 264px;
+    height:190px;    
+}
+#piazza_di_spagna {
+    width: 223px;
+    height:120px; 
+}
+#piazza_mavona_e_la_fontana_dei_quattro_fiumi{
+	position: relative;
+	top: 180px;
+
+} 
+
+
+audio {
+   position:fixed;
+   top: 510px;
+   left: 80px; 
+ 
+
+}
+p1 {
+  font-size:14px;
+}
+#p1 {
+  position: fixed;
+  top:130px;
+  left: 10px; 
+
+}
+#p2 {
+  position: fixed;
+  top:145px;
+  left: 10px; 
+
+}
+#p3 {
+  position: fixed;
+  top:160px;
+  left: 10px; 
+
+}
+#p4 {
+  position: fixed;
+  top:175px;
+  left: 10px; 
+
+}
+#p5 {
+  position: fixed;
+  top:190px;
+  left: 10px; 
+
+}
+#p6 {
+  position: fixed;
+  top:205px;
+  left: 10px; 
+
+}
+#p7 {
+  position: fixed;
+  top:220px;
+  left: 10px; 
+
+}
+#p8 {
+  position: fixed;
+  top:235px;
+  left: 10px; 
+
+}
+#p9 {
+  position: fixed;
+  top:250px;
+  left: 10px; 
+
+}
+#p10 {
+  position: fixed;
+  top:265px;
+  left: 10px; 
+
+}
+#p11 {
+  position: fixed;
+  top:280px;
+  left: 10px; 
+
+}
+#p12 {
+  position: fixed;
+  top:295px;
+  left: 10px; 
+
+}
+#p13 {
+  position: fixed;
+  top:310px;
+  left: 10px; 
+
+}
+#p14 {
+  position: fixed;
+  top:325px;
+  left: 10px; 
+
+}
+#p15 {
+  position: fixed;
+  top:340px;
+  left: 10px; 
+
+}
+#p16 {
+  position: fixed;
+  top:355px;
+  left: 10px; 
+
+}
+#p17 {
+  position: fixed;
+  top:370px;
+  left: 10px; 
+
+}
+#p18 {
+  position: fixed;
+  top:385px;
+  left: 10px; 
+
+}
+#p19 {
+  position: fixed;
+  top:400px;
+  left: 10px; 
+
+}
+#p20 {
+  position: fixed;
+  top:415px;
+  left: 10px; 
+
+}
+#p21 {
+  position: fixed;
+  top:430px;
+  left: 10px; 
+
+}
+Home {
+  position: fixed;
+  top:5px;
+  left: 5px; 
+
+}
+
+    </style>
+</head>
+<body>
+         
+    </div>
+
+    <div id="home" class="search-container">
+        <h1>TOUR DI ROMA</h1>        
+        <input type="text" id="searchBar" placeholder="Cerca un monumento">
+        <button id="cerca"onclick="search()">Cerca</button>
+        <br>
+        <br>
+        <button id="A" onclick="showPage('mercoledi')">Mercoledi</button>
+        <button id="A" onclick="showPage('giovedi')">Giovedi</button>
+        <button id="A" onclick="showPage('venerdi')">Venerdi</button>
+    </div>
+
+ 
+    <div id="mercoledi">
+         <h1>MERCOLEDI'</h1>
+         <button id="Home" onclick="showPage('home')">Home</button>
+         <h2>Mattina</h2>
+         <button id="26" onclick="showPage('Circo massimo')">Circo massimo</button>
+         <button id="26" onclick="showPage('Terme di caracalla')">Terme di caracalla</button>
+         <button id="26" onclick="showPage('Teatro marcello')">Teatro marcello</button>
+         <button id="26" onclick="showPage('Bocca della verità')">Bocca della verità</button>
+         <h2>Pomeriggio</h2>
+         <button id="26" onclick="showPage('Fori imperiali')">Fori imperiali</button> 
+         <button id="26" onclick="showPage('Piazza venezia')">Piazza venezia</button>
+         <button id="26" onclick="showPage('Colonna traiana')">Colonna traiana</button>
+         <button id="26" onclick="showPage('Mercati traianei')">Mercati traianei</button>
+         <button id="26" onclick="showPage('Colosseo')">Colosseo</button>
+         <h2>Sera</h2>
+         <button id="26" onclick="showPage('Trastevere')">Trastevere</button>
+         <button id="26" onclick="showPage('Gianicolo')">Gianicolo</button>
+         
+
+
+
+    </div>
+    <div id="giovedi">
+         <h1>Giovedi</h1>
+         <button id="Home" onclick="showPage('home')">Home</button>
+         <h2>Mattina</h2>
+         <button id="27" onclick="showPage('Largo argentina')">Largo Argentina</button>
+         <button id="27" onclick="showPage('Ghetto ebraico')">Ghetto ebraico</button>
+         <button id="27" onclick="showPage('Campo dei fiori')">Campo dei fiori</button>
+         <button id="27" onclick="showPage('Campidoglio')">Campidoglio</button>
+         <button id="27" onclick="showPage('Isola tiberina')">Isola tiberina</button> 
+         <button id="27" onclick="showPage('Statua di marco aurelio')">Statua di marco aurelio</button>
+         <button id="27" onclick="showPage('Ara pacis')">Ara pacis</button>
+         <button id="27" onclick="showPage('Tomba di augusto')">Tomba di augusto</button>
+         <h2>Pomeriggio</h2>
+         <button id="27" onclick="showPage('Piazza del popolo')">Piazza del popolo</button>
+         <button id="27" onclick="showPage('Santa maria del popolo')">Santa maria del popolo</button>
+         <button id="27" onclick="showPage('Palazzo madama')">Palazzo madama</button>
+         <h2>Sera</h2>
+         <button id="27" onclick="showPage('Piazza navona e la fontana dei quattro fiumi')">Piazza navona e la fontana dei quattro fiumi</button>
+         <button id="27" onclick="showPage('Castel santangelo')">Castel sant'angelo</button> 
+         <button id="27" onclick="showPage('Chiesa di san luigi dei francesi')">Chiesa di san luigi dei francesi</button>
+         <button id="27" onclick="showPage('Pantheon')">Pantheon</button>
+         <button id="27" onclick="showPage('Piazza di spagna')">Piazza di spagna</button>
+         <button id="27" onclick="showPage('Fontana la barcaccia')">Fontana la barcaccia</button>
+         <button id="27" onclick="showPage('Piazza di trevi')">Piazza di trevi</button>
+         <button id="27" onclick="showPage('Fontana di trevi')">Fontana di trevi</button>
+
+         
+ 
+
+
+
+    </div>
+    <div id="venerdi">
+         <h2>Mattina</h2>
+         <button id="Home" onclick="showPage('home')">Home</button>
+         <button id="27" onclick="showPage('Villa adriana')">Villa adriana</button>
+    </div>
+
+    <div id="Fori imperiali">        
+        <h1>FORI IMPERIALI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Cuore pulsante della</p1>
+        <p1 id="p2">Roma antica, i Fori</p1>
+        <p1 id="p3">Imperiali erano il</p1>
+        <p1 id="p4">centro politico,</p1>
+        <p1 id="p5">religioso e</p1> 
+        <p1 id="p6">commerciale dell’Impero.</p1>
+        <p1 id="p7">Costruiti tra il I secolo</p1>
+        <p1 id="p8">a.C. e il II secolo d.C.,</p1>
+        <p1 id="p9">comprendono i fori di</p1>
+        <p1 id="p10">Cesare, Augusto, Nerva</p1>
+        <p1 id="p11">e Traiano. Oggi, tra</p1>
+        <p1 id="p12">colonne spezzate e resti</p1>
+        <p1 id="p13">di templi, si può</p1>
+        <p1 id="p14">immaginare la grandezza</p1>
+        <p1 id="p15">dell’Urbe. Passeggiando</p1>
+        <p1 id="p16">tra le rovine, si</p1>
+        <p1 id="p17">percepisce l’imponenza</p1>
+        <p1 id="p18">dell’architettura romana.</p1>
+        <p1 id="p19">Di notte, l’illuminazione</p1>
+        <p1 id="p20">rende il sito ancora più suggestivo.</p1>
+
+               
+        <img id="fori_imperiali" src=/home/alessio/Documents/WEB/web_roma/immagini/fori_imperiali.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/fori_imperiali.m4a" type="audio/mp4">
+          
+        </audio>
+
+    </div>    
+    <div id="Colonna traiana">
+        <h1>COLONNA TRAIANA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        
+        <p1></p1>
+        <img id="colonna_traiana" src=/home/alessio/Documents/WEB/web_roma/immagini/colonna_traiana.jpg alt="boh"></img>        
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/colonna_traiana.m4a" type="audio/mp4">    
+
+    </div>
+    <div id="Circo massimo">        
+        <h1>CIRCO MASSIMO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Il Circo Massimo era</p1>
+        <p1 id="p2">l’antico stadio destinato</p1>
+        <p1 id="p3">alle corse delle bighe,</p1>
+        <p1 id="p4">capace di ospitare</p1>
+        <p1 id="p5">fino a 250.000</p1> 
+        <p1 id="p6">pettatori. Situato</p1> 
+        <p1 id="p7">tra il Palatino e</p1> 
+        <p1 id="p8">l’Aventino, era il</p1> 
+        <p1 id="p9">più grande impianto</p1>
+        <p1 id="p10">sportivo dell’antichità.</p1>
+        <p1 id="p11">Oggi rimane una vasta</p1>
+        <p1 id="p12">area verde, spesso</p1> 
+        <p1 id="p13">utilizzata per eventi</p1>
+        <p1 id="p14">e concerti. Qui si</p1> 
+        <p1 id="p15">svolgevano giochi</p1>
+        <p1 id="p16">spettacolari in</p1>
+        <p1 id="p17">onore degli dèi e</p1>
+        <p1 id="p18">delle vittorie</p1> 
+        <p1 id="p19">militari. La</p1> 
+        <p1 id="p20">sua storia millenaria</p1>
+        <p1 id="p21">lo rende un luogo iconico della città.</p1>
+        <img id="circo_massimo" src=/home/alessio/Documents/WEB/web_roma/immagini/circo_massimo.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/circo_massimo.mp4" type="audio/mp4">
+    </div>     
+    <div id="Castel santangelo">       
+        <h1>CASTEL SANT'ANGELO</h1
+        <button id="Home" onclick="showPage('home')">Home</button> 
+        <p1>Nato come mausoleo dell’imperatore Adriano nel II secolo d.C., Castel Sant’Angelo divenne fortezza papale nel Medioevo. Il passaggio segreto del Passetto di Borgo lo collegava direttamente al Vaticano. Al suo interno, affreschi rinascimentali e prigioni raccontano la sua storia stratificata. La terrazza panoramica offre una vista mozzafiato su Roma e il Tevere. Il suo ponte adornato di angeli è una delle passeggiate più romantiche della città.
+</p1>
+        <img id="castel_sant_angelo" src=/home/alessio/Documents/WEB/web_roma/immagini/castel_sant'angelo.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/castel_sant'angelo.adts" type="audio/aac">
+    </div>
+    <div id="Trastevere">       
+        <h1>TRASTEVERE</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="trastevere" src=/home/alessio/Documents/WEB/web_roma/immagini/trastevere.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/trastevere.adts" type="audio/aac">
+    </div>
+    <div id="Ghetto ebraico">       
+        <h1>GHETTO EBRAICO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="ghetto_ebraico" src=/home/alessio/Documents/WEB/web_roma/immagini/ghetto_ebraico.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/ghetto_ebraico.m4a" type="audio/mp4">
+    </div>
+    <div id="Piazza del popolo">                
+        <h1>PIAZZA DEL POPOLO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="piazza_del_popolo" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_del_popolo.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_del_popolo.mp3" type="audio/mp3">
+    </div>
+    <div id="Santa maria del popolo">       
+        <h1>SANTA MARIA DEL POPOLO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="santa_maria_del_popolo" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_del_popolo.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_santa_maria_del_popolo.mp3" type="audio/mpeg">
+    </div>
+    <div id="Campo dei fiori">       
+        <h1>CAMPO DEI FIORI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="campo_dei_fiori" src=/home/alessio/Documents/WEB/web_roma/immagini/campo_dei_fiori.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/campo_dei_fiori.mp3" type="audio/mp3">
+    </div>
+    <div id="Terme di caracalla">
+        <h1>LE TERME DI CARACALLA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="terme_di_caracalla" src=/home/alessio/Documents/WEB/web_roma/immagini/terme_di_caracalla.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/terme_di_caracalla.mp4" type="audio/mp4">
+    </div>
+    <div id="Mercati traianei">        
+        <h1>MERCATI TRAIANEI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="mercati_traianei" src=/home/alessio/Documents/WEB/web_roma/immagini/mercati_traianei.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/mercati_traianei.ogx" type="audio/ogg">
+    </div>
+    <div id="Chiesa di san luigi dei francesi">       
+        <h1>CHIESA DI SAN LUIGI DEI FRANCESI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="chiesa_di_san_luigi_dei_francesi" src=/home/alessio/Documents/WEB/web_roma/immagini/chiesa_di_san_luigi_dei_francesi.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/chiesa_di_san_luigi_dei_francesi.mp4" type="audio/mp4">
+    </div>
+    <div id="Campidoglio">    
+        <h1>CAMPIDOGLIO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="campidoglio" src=/home/alessio/Documents/WEB/web_roma/immagini/campidoglio.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/campidoglio.m4a" type="audio/mp4">
+    </div>
+    <div id="Isola tiberina">       
+        <h1>ISOLA TIBERINA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="isola_tiberina" src=/home/alessio/Documents/WEB/web_roma/immagini/isola_tiberina.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/isola_tiberina.mp4" type="audio/mp4">
+    </div>
+    <div id="Piazza di spagna">       
+        <h1>PIAZZA DI SPAGNA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="piazza_di_spagna" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_di_spagna.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_di_spagna.mp3" type="audio/mp3">
+    </div>
+    <div id="Fontana la barcaccia">        
+        <h1>FONTANA LA BARCACCIA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="fontana_la_barcaccia" src=/home/alessio/Documents/WEB/web_roma/immagini/fontana_della_barcaccia.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/fontana_la_barcaccia.mp3" type="audio/mp3">
+    </div>
+    <div id="Piazza san pietro">        
+        <h1>PIAZZA SAN PIETRO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="piazza_san_pietro" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_san_pietro.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_san_pietro.mp4" type="audio/mp4">
+    </div>
+    <div id="Basilica di san pietro">        
+        <h1>BASILICA DI SAN PIETRO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="basilica_di_san_pietro" src=/home/alessio/Documents/WEB/web_roma/immagini/basilica_di_san_pietro.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/basilica_di_san_pietro.mp4" type="audio/mp4">
+    </div>
+    <div id="Colosseo">        
+        <h1>COLOSSEO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="colosseo" src=/home/alessio/Documents/WEB/web_roma/immagini/colosseo.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/colosseo.ogx" type="audio/ogg">
+    </div>
+    <div id="Altare della patria">       
+        <h1>ALTARE DELLA PATRIA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="altare_della_patria" src=/home/alessio/Documents/WEB/web_roma/immagini/altare_della_patria.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/altare_della_patria.adts" type="audio/aac">
+    </div>
+    <div id="Statua di marco aurelio">        
+        <h1>STATUA DI MARCO AURELIO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="statua_di_marco_aurelio" src=/home/alessio/Documents/WEB/web_roma/immagini/statua_di_marco_aurelio.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/statua_di_marco_aurelio.mp3" type="audio/mp3">
+    </div>
+    <div id="Ara pacis">        
+        <h1>ARA PACIS</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="ara_pacis" src=/home/alessio/Documents/WEB/web_roma/immagini/ara_pacis.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/ara_pacis.ogx" type="audio/ogg">
+    </div>
+    <div id="Tomba di augusto">       
+        <h1>TOMBA DI AUGUSTO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="tomba_di_augusto" src=/home/alessio/Documents/WEB/web_roma/immagini/tomba_di_augusto.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/tomba_di_augusto.ogx" type="audio/ogg">
+    </div>
+    <div id="Bocca della verità">        
+        <h1>BOCCA DELLA VERITÀ</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="bocca_della_verita" src=/home/alessio/Documents/WEB/web_roma/immagini/bocca_della_verita.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/bocca_della_verita.mp3" type="audio/mp3">
+    </div>
+    <div id="Teatro marcello">        
+        <h1>TEATRO MARCELLO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="teatro_marcello" src=/home/alessio/Documents/WEB/web_roma/immagini/teatro_marcello.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/teatro_marcello.mp3" type="audio/mp3">
+    </div>
+    <div id="Palazzo madama">        
+        <h1>PALAZZO MADAMA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="palazzo_madama" src=/home/alessio/Documents/WEB/web_roma/immagini/palazzo_madama.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/palazzo_madama.m4a" type="audio/mp4">
+    </div>
+    <div id="Piazza di trevi">        
+        <h1>PIAZZA DI TREVI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="piazza_di_trevi" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_di_trevi.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_di_trevi.mp4" type="audio/mp4">
+    </div>
+    <div id="Villa adriana">        
+        <h1>VILLA ADRIANA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="villa_adriana" src=/home/alessio/Documents/WEB/web_roma/immagini/villa_adriana.JPG alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/villa_adriana.ogx" type="audio/ogg">
+    </div>
+    <div id="Largo argentina">        
+        <h1>LARGO ARGENTINA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="largo_argentina" src=/home/alessio/Documents/WEB/web_roma/immagini/largo_argentina.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/largo_argentina.ogx" type="audio/ogg">
+    </div>
+    <div id="Fontana di trevi">
+        <h1>FONTANA DI TREVI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="fontana_di_trevi" src=/home/alessio/Documents/WEB/web_roma/immagini/fontana_di_trevi.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/fontana_di_trevi.mp4" type="audio/mp4">
+
+
+    </div>
+    <div id="Piazza navona e la fontana dei quattro fiumi">
+        <h1>PIAZZA NAVONA E LA FONTANA DEI QUATTRO FIUMI</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="piazza_navona_e_la_fontana_dei_quattro_fiumi" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_navona_e_la_fontana_dei_quattro_fiumi.jpg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_navona_e_la_fontana_dei_quattro_fiumi.ogx" type="audio/ogg">
+
+    </div>
+   
+    <div id="Piazza venezia">        
+        <h1>PIAZZA VENEZIA</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="piazza_venezia" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_venezia.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_venezia.mp3" type="audio/mpeg">
+
+    </div>
+    <div id="Pantheon">        
+        <h1>PANTHEON</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="pantheon" src=/home/alessio/Documents/WEB/web_roma/immagini/pantheon.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/fontana_di_trevi.mp4" type="audio/mp4">
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/pantheon.m4a" type="audio/mp4">
+
+    </div>
+    <div id="Gianicolo">        
+        <h1>GIANICOLO</h1>
+        <button id="Home" onclick="showPage('home')">Home</button>
+        <p1></p1>
+        <img id="gianicolo" src=/home/alessio/Documents/WEB/web_roma/immagini/gianicolo.jpeg alt="boh"></img>
+        <audio controls>
+          <source src="/home/alessio/Documents/WEB/web_roma/audio/gianicolo.m4a" type="audio/mp4">
+
+    </div>
+    
+
+
+    </div>
+    
+         
+    <script>
+        
+        function showPage(pageId) {
+            // Nascondi tutte le pagine
+            document.querySelectorAll('div').forEach(function(page) {
+                page.style.display = 'none';
+            });
+            // Mostra la pagina selezionata
+            document.getElementById(pageId).style.display = 'block';
+        }
+        function search() {
+            let query = document.getElementById("searchBar").value;
+            
+            // Nasconde tutte le sezioni prima di mostrare quella giusta
+            document.querySelectorAll('div').forEach(sec => sec.style.display = 'none');
+            
+            // Trova e mostra la sezione corrispondente
+            let section = document.getElementById( query);
+            if (section) {
+                section.style.display = "block";
+            } else {
+                alert("Nessuna sezione trovata per il numero: " + query);
+            }
+        }
+        showPage('home');
+    </script>
+</body>
+</html>
