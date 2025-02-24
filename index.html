@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GITA A ROMA</title>
     <style>
-    body {
+body {
     
-    background-color: #f4f4f4;
+    background-color: #cfcfcf;
 
 }    
-    
+
 h1 {
     font-family: Oswald;
     color: #000000;
@@ -35,7 +35,7 @@ input {
      outline: none;
 }
 button {
-     background-color: #f4f4f4;
+     background-color: #cfcfcf;
      color: black;
      border: none;
      padding: 8px 12px;
@@ -54,25 +54,25 @@ button {
      width: 300px;
      text-align: center;
 }
-#26 {
-    background-color: #f4f4f4;
+#a {
+    background-color: #cfcfcf;
     color: black;
     border: #f4f4f4;
     text-align: center;
     display: block;
 
 }
-#27 {
+#b {
     
     color: black;
-    border: #f4f4f4;
+    border: #cfcfcf;
     
     display: flex;
     text-align: center;
     flex-direction: column;
 }
-#28 {
-    background-color: #f4f4f4;
+#c {
+    background-color: #cfcfcf;
     color: black;
     border: #f4f4f4;
     text-align: center;
@@ -81,7 +81,19 @@ button {
 
 }
 
-#A {
+#M {
+   padding: 5px 5px;
+   background-color: green;
+   
+
+}
+#G {
+   padding: 5px 5px;
+   background-color: green;
+   
+
+}
+#V {
    padding: 5px 5px;
    background-color: green;
    
@@ -132,13 +144,13 @@ img {
 
 audio {
    position:fixed;
-   top: 510px;
-   left: 80px; 
+   top: 570px;
+   left: 55px; 
  
 
 }
 p1 {
-  font-size:14px;
+  font-size:12px;
 }
 #p1 {
   position: fixed;
@@ -266,13 +278,97 @@ p1 {
   left: 10px; 
 
 }
-Home {
+#p22 {
   position: fixed;
-  top:5px;
-  left: 5px; 
+  top:445px;
+  left: 10px; 
+
+}
+#p23 {
+  position: fixed;
+  top:460px;
+  left: 10px; 
+
+}
+#p24 {
+  position: fixed;
+  top:475px;
+  left: 10px; 
+
+}
+#p25 {
+  position: fixed;
+  top:490px;
+  left: 10px; 
+
+}
+#p26 {
+  position: fixed;
+  top:505px;
+  left: 10px; 
+
+}
+#p27 {
+  position: fixed;
+  top:520px;
+  left: 10px; 
+
+}
+#p28 {
+  position: fixed;
+  top:535px;
+  left: 10px; 
+
+}
+#p29 {
+  position: fixed;
+  top:550px;
+  left: 10px; 
+
+}
+#p30 {
+  position: fixed;
+  top:575px;
+  left: 10px; 
 
 }
 
+#cerca {
+	font-size: 20px;
+
+
+
+} 
+#mattina {
+   text-align:left; 
+
+
+}
+#pomeriggio {
+   text-align:left; 
+
+
+}  
+#sera {
+   text-align: left; 
+
+
+}
+
+#casa {
+   position:fixed;
+   top: 700px;
+   left: 5px;
+}
+#grande {
+   font-size:30px;
+}
+#gio {
+   position: fixed;
+   top: 700px;
+   left: 100px;
+
+} 
     </style>
 </head>
 <body>
@@ -282,32 +378,32 @@ Home {
     <div id="home" class="search-container">
         <h1>TOUR DI ROMA</h1>        
         <input type="text" id="searchBar" placeholder="Cerca un monumento">
-        <button id="cerca"onclick="search()">Cerca</button>
+        <button id="cerca"onclick="search()">🔍</button>
         <br>
         <br>
-        <button id="A" onclick="showPage('mercoledi')">Mercoledi</button>
-        <button id="A" onclick="showPage('giovedi')">Giovedi</button>
-        <button id="A" onclick="showPage('venerdi')">Venerdi</button>
+        <button id="M" onclick="showPage('mercoledi')">Mercoledi</button>
+        <button id="G" onclick="showPage('giovedi')">Giovedi</button>
+        <button id="V" onclick="showPage('venerdi')">Venerdi</button>
     </div>
 
  
     <div id="mercoledi">
-         <h1>MERCOLEDI'</h1>
+         <h1 >MERCOLEDI'</h1>
          <button id="Home" onclick="showPage('home')">Home</button>
-         <h2>Mattina</h2>
-         <button id="26" onclick="showPage('Circo massimo')">Circo massimo</button>
-         <button id="26" onclick="showPage('Terme di caracalla')">Terme di caracalla</button>
-         <button id="26" onclick="showPage('Teatro marcello')">Teatro marcello</button>
-         <button id="26" onclick="showPage('Bocca della verità')">Bocca della verità</button>
-         <h2>Pomeriggio</h2>
-         <button id="26" onclick="showPage('Fori imperiali')">Fori imperiali</button> 
-         <button id="26" onclick="showPage('Piazza venezia')">Piazza venezia</button>
-         <button id="26" onclick="showPage('Colonna traiana')">Colonna traiana</button>
-         <button id="26" onclick="showPage('Mercati traianei')">Mercati traianei</button>
-         <button id="26" onclick="showPage('Colosseo')">Colosseo</button>
-         <h2>Sera</h2>
-         <button id="26" onclick="showPage('Trastevere')">Trastevere</button>
-         <button id="26" onclick="showPage('Gianicolo')">Gianicolo</button>
+         <h2 id="mattina">Mattina</h2>
+         <button id="a" onclick="showPage('Circo massimo')">Circo massimo</button>
+         <button id="a" onclick="showPage('Terme di caracalla')">Terme di caracalla</button>
+         <button id="a" onclick="showPage('Teatro marcello')">Teatro marcello</button>
+         <button id="a" onclick="showPage('Bocca della verità')">Bocca della verità</button>
+         <h2 id="pomeriggio">Pomeriggio</h2>
+         <button id="a" onclick="showPage('Fori imperiali')">Fori imperiali</button> 
+         <button id="a" onclick="showPage('Piazza venezia')">Piazza venezia</button>
+         <button id="a" onclick="showPage('Colonna traiana')">Colonna traiana</button>
+         <button id="" onclick="showPage('Mercati traianei')">Mercati traianei</button>
+         <button id="a" onclick="showPage('Colosseo')">Colosseo</button>
+         <h2 id="sera">Sera</h2>
+         <button id="a" onclick="showPage('Trastevere')">Trastevere</button>
+         <button id="a" onclick="showPage('Gianicolo')">Gianicolo</button>
          
 
 
@@ -315,29 +411,29 @@ Home {
     </div>
     <div id="giovedi">
          <h1>Giovedi</h1>
-         <button id="Home" onclick="showPage('home')">Home</button>
-         <h2>Mattina</h2>
-         <button id="27" onclick="showPage('Largo argentina')">Largo Argentina</button>
-         <button id="27" onclick="showPage('Ghetto ebraico')">Ghetto ebraico</button>
-         <button id="27" onclick="showPage('Campo dei fiori')">Campo dei fiori</button>
-         <button id="27" onclick="showPage('Campidoglio')">Campidoglio</button>
-         <button id="27" onclick="showPage('Isola tiberina')">Isola tiberina</button> 
-         <button id="27" onclick="showPage('Statua di marco aurelio')">Statua di marco aurelio</button>
-         <button id="27" onclick="showPage('Ara pacis')">Ara pacis</button>
-         <button id="27" onclick="showPage('Tomba di augusto')">Tomba di augusto</button>
-         <h2>Pomeriggio</h2>
-         <button id="27" onclick="showPage('Piazza del popolo')">Piazza del popolo</button>
-         <button id="27" onclick="showPage('Santa maria del popolo')">Santa maria del popolo</button>
-         <button id="27" onclick="showPage('Palazzo madama')">Palazzo madama</button>
-         <h2>Sera</h2>
-         <button id="27" onclick="showPage('Piazza navona e la fontana dei quattro fiumi')">Piazza navona e la fontana dei quattro fiumi</button>
-         <button id="27" onclick="showPage('Castel santangelo')">Castel sant'angelo</button> 
-         <button id="27" onclick="showPage('Chiesa di san luigi dei francesi')">Chiesa di san luigi dei francesi</button>
-         <button id="27" onclick="showPage('Pantheon')">Pantheon</button>
-         <button id="27" onclick="showPage('Piazza di spagna')">Piazza di spagna</button>
-         <button id="27" onclick="showPage('Fontana la barcaccia')">Fontana la barcaccia</button>
-         <button id="27" onclick="showPage('Piazza di trevi')">Piazza di trevi</button>
-         <button id="27" onclick="showPage('Fontana di trevi')">Fontana di trevi</button>
+         <button id="gio" onclick="showPage('home')">Home</button>
+         <h2 id="mattina">Mattina</h2>
+         <button id="b" onclick="showPage('Largo argentina')">Largo Argentina</button>
+         <button id="b" onclick="showPage('Ghetto ebraico')">Ghetto ebraico</button>
+         <button id="b" onclick="showPage('Campo dei fiori')">Campo dei fiori</button>
+         <button id="b" onclick="showPage('Campidoglio')">Campidoglio</button>
+         <button id="b" onclick="showPage('Isola tiberina')">Isola tiberina</button> 
+         <button id="b" onclick="showPage('Statua di marco aurelio')">Statua di marco aurelio</button>
+         <button id="b" onclick="showPage('Ara pacis')">Ara pacis</button>
+         <button id="b" onclick="showPage('Tomba di augusto')">Tomba di augusto</button>
+         <h2 id="pomeriggio">Pomeriggio</h2>
+         <button id="b" onclick="showPage('Piazza del popolo')">Piazza del popolo</button>
+         <button id="b" onclick="showPage('Santa maria del popolo')">Santa maria del popolo</button>
+         <button id="b" onclick="showPage('Palazzo madama')">Palazzo madama</button>
+         <h2 id="sera">Sera</h2>
+         <button id="b" onclick="showPage('Piazza navona e la fontana dei quattro fiumi')">Piazza navona e la fontana dei quattro fiumi</button>
+         <button id="b" onclick="showPage('Castel santangelo')">Castel sant'angelo</button> 
+         <button id="b" onclick="showPage('Chiesa di san luigi dei francesi')">Chiesa di san luigi dei francesi</button>
+         <button id="b" onclick="showPage('Pantheon')">Pantheon</button>
+         <button id="b" onclick="showPage('Piazza di spagna')">Piazza di spagna</button>
+         <button id="b" onclick="showPage('Fontana la barcaccia')">Fontana la barcaccia</button>
+         <button id="b" onclick="showPage('Piazza di trevi')">Piazza di trevi</button>
+         <button id="b" onclick="showPage('Fontana di trevi')">Fontana di trevi</button>
 
          
  
@@ -346,14 +442,14 @@ Home {
 
     </div>
     <div id="venerdi">
-         <h2>Mattina</h2>
+         <h2 id="mattina">Mattina</h2>
          <button id="Home" onclick="showPage('home')">Home</button>
-         <button id="27" onclick="showPage('Villa adriana')">Villa adriana</button>
+         <button id="c" onclick="showPage('Villa adriana')">Villa adriana</button>
     </div>
 
     <div id="Fori imperiali">        
         <h1>FORI IMPERIALI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
+        <button id="casa" onclick="showPage('home')">Home</button>
         <p1 id="p1">Cuore pulsante della</p1>
         <p1 id="p2">Roma antica, i Fori</p1>
         <p1 id="p3">Imperiali erano il</p1>
@@ -378,24 +474,41 @@ Home {
                
         <img id="fori_imperiali" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/fori_imperiali.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/fori_imperiali.m4a" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/fori_imperiali.m4a" type="audio/mp4">
           
         </audio>
 
     </div>    
     <div id="Colonna traiana">
         <h1>COLONNA TRAIANA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
+        <button id="casa" onclick="showPage('home')">Home</button>
         
-        <p1></p1>
-        <img id="colonna_traiana" src=/home/alessio/Documents/WEB/web_roma/immagini/colonna_traiana.jpg alt="boh"></img>        
+        <p1 id="p1">Eretta nel 113 d.C., la</p1> 
+        <p1 id="p2">Colonna Traiana celebra</p1>
+        <p1 id="p3">le vittorie dell’imperatore</p1>
+        <p1 id="p4">Traiano contro i Daci.</p1>
+        <p1 id="p5">Il suo fregio scolpito</p1>
+        <p1 id="p6">a spirale racconta, con</p1>
+        <p1 id="p7">incredibile dettaglio,</p1>
+        <p1 id="p8">le battaglie dell’esercito</p1>
+        <p1 id="p9">romano. Alta circa 30</p1>
+        <p1 id="p10">metri, un tempo ospitava</p1>
+        <p1 id="p11">le ceneri dell’imperatore</p1>
+        <p1 id="p12">alla sua base. In cima</p1>
+        <p1 id="p13">svettava una statua di</p1>
+        <p1 id="p14">Traiano, poi sostituita</p1>
+        <p1 id="p15">da quella di San Pietro</p1>
+        <p1 id="p16">nel XVI secolo. È un</p1>
+        <p1 id="p17">capolavoro della scultura</p1>
+        <p1 id="p18">romana e una fonte storica preziosa.</p1>
+        <img id="colonna_traiana" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/colonna_traiana.jpg" alt="boh"></img>        
         <audio controls>
-          <source src=colonna_traiana.m4a" type="audio/mp4">    
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/colonna_traiana.m4a" type="audio/mp4">    
 
     </div>
     <div id="Circo massimo">        
         <h1>CIRCO MASSIMO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
+        <button id="casa" onclick="showPage('home')">Home</button>
         <p1 id="p1">Il Circo Massimo era</p1>
         <p1 id="p2">l’antico stadio destinato</p1>
         <p1 id="p3">alle corse delle bighe,</p1>
@@ -419,264 +532,912 @@ Home {
         <p1 id="p21">lo rende un luogo iconico della città.</p1>
         <img id="circo_massimo" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/circo_massimo.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/circo_massimo.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/circo_massimo.mp4" type="audio/mp4">
     </div>     
     <div id="Castel santangelo">       
-        <h1>CASTEL SANT'ANGELO</h1
-        <button id="Home" onclick="showPage('home')">Home</button> 
-        <p1>Nato come mausoleo dell’imperatore Adriano nel II secolo d.C., Castel Sant’Angelo divenne fortezza papale nel Medioevo. Il passaggio segreto del Passetto di Borgo lo collegava direttamente al Vaticano. Al suo interno, affreschi rinascimentali e prigioni raccontano la sua storia stratificata. La terrazza panoramica offre una vista mozzafiato su Roma e il Tevere. Il suo ponte adornato di angeli è una delle passeggiate più romantiche della città.
-</p1>
+        <h1>CASTEL SANT'ANGELO</h1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Nato come mausoleo</p1>
+        <p1 id="p2">dell’imperatore</p1>
+        <p1 id="p3">Adriano nel II</p1> 
+        <p1 id="p4">secolo d.C., Castel</p1>
+        <p1 id="p5">Sant’Angelo divenne</p1>
+        <p1 id="p6">fortezza papale nel</p1>
+        <p1 id="p7">Medioevo. Il passaggio</p1>
+        <p1 id="p8">segreto del Passetto</p1>
+        <p1 id="p9">di Borgo lo collegava</p1>
+        <p1 id="p10">direttamente al</p1> 
+        <p1 id="p11">Vaticano. Al suo</p1> 
+        <p1 id="p12">interno, affreschi</p1>
+        <p1 id="p13">rinascimentali e</p1> 
+        <p1 id="p14">prigioni raccontano</p1>
+        <p1 id="p15">la sua storia stratificata.</p1>
+        <p1 id="p16">La terrazza panoramica offre</p1>
+        <p1 id="p17">una vista mozzafiato su Roma</p1>
+        <p1 id="p18">e il Tevere. Il suo ponte adornato</p1>
+        <p1 id="p19">di angeli è una delle passeggiate</p1>
+        <p1 id="p20">più romantiche della città.</p1>
         <img id="castel_sant_angelo" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/castel_sant'angelo.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/castel_sant'angelo.adts" type="audio/aac">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/castel_sant'angelo.adts" type="audio/aac">
     </div>
     <div id="Trastevere">       
         <h1>TRASTEVERE</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Trastevere è il quartiere</p1>
+        <p1 id="p2">più autentico e pittoresco</p1>
+        <p1 id="p3">di Roma, con le sue</p1>
+        <p1 id="p4">stradine acciottolate</p1>
+        <p1 id="p5">e le case color ocra.</p1>
+        <p1 id="p6">Simbolo della vita</p1>
+        <p1 id="p7">romana, ospita chiese</p1>
+        <p1 id="p8">storiche come Santa</p1>
+        <p1 id="p9">Maria in Trastevere.</p1>
+        <p1 id="p10">È celebre per la sua</p1>
+        <p1 id="p11">vivace vita notturna,</p1>
+        <p1 id="p12">con osterie, locali</p1>
+        <p1 id="p13">e piazzette animate.</p1>
+        <p1 id="p14">Qui si respira ancora</p1>
+        <p1 id="p15">l’atmosfera della Roma</p1>
+        <p1 id="p16">più genuina e popolare.</p1>
+        <p1 id="p17">Di sera, le sue luci</p1>
+        <p1 id="p18">soffuse lo rendono</p1>
+        <p1 id="p19">irresistibilmente affascinante.</p1>
         <img id="trastevere" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/trastevere.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/trastevere.adts" type="audio/aac">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/trastevere.adts" type="audio/aac">
     </div>
     <div id="Ghetto ebraico">       
         <h1>GHETTO EBRAICO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Uno dei quartieri</p1>  
+        <p1 id="p2">più antichi di Roma,</p1>  
+        <p1 id="p3">il Ghetto Ebraico</p1>    
+        <p1 id="p4">è ricco di storia,</p1>  
+        <p1 id="p5">cultura e tradizione.</p1>    
+        <p1 id="p6">Fondato nel 1555,</p1>  
+        <p1 id="p7">è famoso per la</p1>  
+        <p1 id="p8">Sinagoga monumentale</p1>  
+        <p1 id="p9">e per i suoi</p1>  
+        <p1 id="p10">ristoranti kosher.</p1>    
+        <p1 id="p11">Qui si possono</p1>  
+        <p1 id="p12">gustare specialità</p1>  
+        <p1 id="p13">come i carciofi</p1>  
+        <p1 id="p14">alla giudia e la</p1>  
+        <p1 id="p15">crostata di ricotta</p1>  
+        <p1 id="p16">e visciole.</p1>    
+        <p1 id="p17">Il Portico d’Ottavia</p1>  
+        <p1 id="p18">e le rovine romane</p1>  
+        <p1 id="p19">convivono con</p1>  
+        <p1 id="p20">l’anima ebraica</p1>  
+        <p1 id="p21">del quartiere.</p1>    
+        <p1 id="p22">Passeggiando tra</p1>  
+        <p1 id="p23">le sue strade,</p1>  
+        <p1 id="p24">si avverte il fascino</p1>  
+        <p1 id="p25">di una comunità</p1>  
+        <p1 id="p26">che ha resistito</p1>  
+        <p1 id="p27">nei secoli.</p1>
+
         <img id="ghetto_ebraico" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/ghetto_ebraico.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/ghetto_ebraico.m4a" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/ghetto_ebraico.m4a" type="audio/mp4">
     </div>
     <div id="Piazza del popolo">                
         <h1>PIAZZA DEL POPOLO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+          
+        <p1 id="p1">Maestosa e scenografica,</p1>  
+        <p1 id="p2">Piazza del Popolo</p1>  
+        <p1 id="p3">è dominata dall’</p1>  
+        <p1 id="p4">obelisco Flaminio</p1>  
+        <p1 id="p5">e circondata da chiese</p1>  
+        <p1 id="p6">e palazzi storici.</p1>    
+        <p1 id="p7">Il suo ingresso</p1>  
+        <p1 id="p8">monumentale,</p1>  
+        <p1 id="p9">Porta del Popolo,</p1>  
+        <p1 id="p10">accoglieva i viaggiatori</p1>  
+        <p1 id="p11">provenienti dal nord.</p1>    
+        <p1 id="p12">Le due chiese</p1>  
+        <p1 id="p13">gemelle, Santa Maria</p1>  
+        <p1 id="p14">in Montesanto e</p1>  
+        <p1 id="p15">Santa Maria dei Miracoli,</p1>  
+        <p1 id="p16">creano un perfetto</p1>  
+        <p1 id="p17">equilibrio architettonico.</p1>    
+        <p1 id="p18">Dal Pincio si gode</p1>  
+        <p1 id="p19">di una vista</p1>  
+        <p1 id="p20">spettacolare sulla piazza</p1>  
+        <p1 id="p21">e su Roma.</p1>    
+        <p1 id="p22">È uno dei luoghi</p1>  
+        <p1 id="p23">più iconici e</p1>  
+        <p1 id="p24">fotografati della città.</p1>
         <img id="piazza_del_popolo" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_del_popolo.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_del_popolo.mp3" type="audio/mp3">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_del_popolo.mp3" type="audio/mp3">
     </div>
     <div id="Santa maria del popolo">       
         <h1>SANTA MARIA DEL POPOLO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Questa chiesa</p1>  
+        <p1 id="p2">rinascimentale,</p1>  
+        <p1 id="p3">situata all’ingresso</p1>  
+        <p1 id="p4">di Piazza del Popolo,</p1>  
+        <p1 id="p5">custodisce opere</p1>  
+        <p1 id="p6">d’arte straordinarie.</p1>    
+        <p1 id="p7">Tra i suoi</p1>  
+        <p1 id="p8">capolavori, spiccano</p1>  
+        <p1 id="p9">le tele di Caravaggio</p1>  
+        <p1 id="p10">e gli affreschi</p1>  
+        <p1 id="p11">di Pinturicchio.</p1>    
+        <p1 id="p12">La Cappella Chigi,</p1>  
+        <p1 id="p13">progettata da</p1>  
+        <p1 id="p14">Raffaello, è una</p1>  
+        <p1 id="p15">meraviglia del</p1>  
+        <p1 id="p16">Rinascimento.</p1>    
+        <p1 id="p17">La leggenda vuole</p1>  
+        <p1 id="p18">che la chiesa</p1>  
+        <p1 id="p19">sia stata costruita</p1>  
+        <p1 id="p20">per esorcizzare</p1>  
+        <p1 id="p21">lo spirito di Nerone.</p1>    
+        <p1 id="p22">Il suo interno</p1>  
+        <p1 id="p23">ricco di storia</p1>  
+        <p1 id="p24">e arte la rende</p1>  
+        <p1 id="p25">una tappa imperdibile</p1>  
+        <p1 id="p26">per gli amanti</p1>  
+        <p1 id="p27">della cultura.</p1>        
         <img id="santa_maria_del_popolo" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_del_popolo.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_santa_maria_del_popolo.mp3" type="audio/mpeg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_santa_maria_del_popolo.mp3" type="audio/mpeg">
     </div>
     <div id="Campo dei fiori">       
         <h1>CAMPO DEI FIORI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Campo de’ Fiori</p1>  
+        <p1 id="p2">è una delle piazze</p1>  
+        <p1 id="p3">più vivaci di Roma,</p1>  
+        <p1 id="p4">famosa per il mercato</p1>  
+        <p1 id="p5">mattutino di frutta,</p1>  
+        <p1 id="p6">verdura e spezie.</p1>    
+        <p1 id="p7">Al centro si erge</p1>  
+        <p1 id="p8">la statua di</p1>  
+        <p1 id="p9">Giordano Bruno,</p1>  
+        <p1 id="p10">bruciato qui</p1>  
+        <p1 id="p11">nel 1600 per eresia.</p1>    
+        <p1 id="p12">Di giorno è un luogo</p1>  
+        <p1 id="p13">pittoresco e colorato,</p1>  
+        <p1 id="p14">mentre di sera</p1>  
+        <p1 id="p15">si anima con locali</p1>  
+        <p1 id="p16">e ristoranti.</p16>    
+        <p1 id="p17">Le strade circostanti</p1>  
+        <p1 id="p18">ospitano botteghe</p1>  
+        <p1 id="p19">artigianali e</p1>  
+        <p1 id="p20">librerie storiche.</p1>    
+        <p1 id="p21">È uno dei luoghi</p1>  
+        <p1 id="p22">più amati da romani</p1>  
+        <p1 id="p23">e turisti per la sua</p1>  
+        <p1 id="p24">atmosfera unica.</p1>        
         <img id="campo_dei_fiori" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/campo_dei_fiori.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/campo_dei_fiori.mp3" type="audio/mp3">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/campo_dei_fiori.mp3" type="audio/mp3">
     </div>
     <div id="Terme di caracalla">
         <h1>LE TERME DI CARACALLA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Le Terme di Caracalla</p1>  
+        <p1 id="p2">erano tra i più</p1>  
+        <p1 id="p3">grandiosi complessi</p1>  
+        <p1 id="p4">termali dell’antica</p1>  
+        <p1 id="p5">Roma, costruiti</p1>  
+        <p1 id="p6">nel III secolo d.C.</p1>    
+
+        <p1 id="p7">Potevano ospitare</p1>  
+        <p1 id="p8">fino a 1.600 persone</p1>  
+        <p1 id="p9">e offrivano bagni</p1>  
+        <p1 id="p10">caldi, palestre</p1>  
+        <p1 id="p11">e biblioteche.</p1>    
+
+        <p1 id="p12">Oggi restano</p1>  
+        <p1 id="p13">imponenti rovine</p1>  
+        <p1 id="p14">che testimoniano</p1>  
+        <p1 id="p15">lo splendore</p1>  
+        <p1 id="p16">dell’ingegneria romana.</p1>    
+
+        <p1 id="p17">D’estate, il sito</p1>  
+        <p1 id="p18">diventa un suggestivo</p1>  
+        <p1 id="p19">teatro all’aperto</p1>  
+        <p1 id="p20">per spettacoli</p1>  
+        <p1 id="p21">e concerti.</p1>    
+
+        <p1 id="p22">Passeggiare tra</p1>  
+        <p1 id="p23">le sue mura</p1>  
+        <p1 id="p24">significa fare</p1>  
+        <p1 id="p25">un salto indietro</p1>  
+        <p1 id="p26">nel tempo.</p1>
+
         <img id="terme_di_caracalla" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/terme_di_caracalla.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/terme_di_caracalla.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/terme_di_caracalla.mp4" type="audio/mp4">
     </div>
     <div id="Mercati traianei">        
         <h1>MERCATI TRAIANEI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Considerati il primo</p1>  
+        <p1 id="p2">centro commerciale</p1>  
+        <p1 id="p3">della storia, i</p1>  
+        <p1 id="p4">Mercati di Traiano</p1>  
+        <p1 id="p5">erano un complesso</p1>  
+        <p1 id="p6">multifunzionale dell’antica</p1>  
+        <p1 id="p7">Roma.</p1>    
+
+        <p1 id="p8">Costruiti nel II</p1>  
+        <p1 id="p9">secolo d.C., ospitavano</p1>  
+        <p1 id="p10">negozi, uffici</p1>  
+        <p1 id="p11">amministrativi e magazzini.</p1>    
+
+        <p1 id="p12">Oggi il sito ospita</p1>  
+        <p1 id="p13">il Museo dei Fori</p1>  
+        <p1 id="p14">Imperiali, con reperti</p1>  
+        <p1 id="p15">e ricostruzioni storiche.</p1>    
+
+        <p1 id="p16">L’architettura innovativa</p1>  
+        <p1 id="p17">e la maestosità delle</p1>  
+        <p1 id="p18">rovine affascinano</p1>  
+        <p1 id="p19">ancora oggi.</p1>    
+
+        <p1 id="p20fontana">Passeggiando tra le sue</p1>  
+        <p1 id="p21">arcate, si respira</p1>  
+        <p1 id="p22">l’atmosfera della Roma</p1>  
+        <p1 id="p23">imperiale.</p1>
+
         <img id="mercati_traianei" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/mercati_traianei.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/mercati_traianei.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/mercati_traianei.ogx" type="audio/ogg">
     </div>
     <div id="Chiesa di san luigi dei francesi">       
         <h1>CHIESA DI SAN LUIGI DEI FRANCESI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Questa chiesa barocca</p1>  
+        <p1 id="p2">è celebre per ospitare</p1>  
+        <p1 id="p3">tre capolavori di</p1>  
+        <p1 id="p4">Caravaggio sulla vita</p1>  
+        <p1 id="p5">di San Matteo.</p1>    
+
+        <p1 id="p6">Situata nel cuore</p1>  
+        <p1 id="p7">di Roma, è il punto</p1>  
+        <p1 id="p8">di riferimento della</p1>  
+        <p1 id="p9">comunità francese nella</p1>  
+        <p1 id="p10">città.</p1>    
+
+        <p1 id="p11">I suoi interni sontuosi,</p1>  
+        <p1 id="p12">con affreschi e</p1>  
+        <p1 id="p13">decorazioni dorate,</p1>  
+        <p1 id="p14">incantano i visitatori.</p1>    
+
+        <p1 id="p15">Le tele di Caravaggio,</p1>  
+        <p1 id="p16">con il loro gioco</p1>  
+        <p1 id="p17">di luce e ombra,</p1>  
+        <p1 id="p18">sono una tappa</p1>  
+        <p1 id="p19">imperdibile per gli</p1>  
+        <p1 id="p20">amanti dell’arte.</p1>    
+
+        <p1 id="p21">La chiesa si trova</p1>  
+        <p1 id="p22">vicino a Piazza Navona,</p1>  
+        <p1 id="p23">in una delle zone</p1>  
+        <p1 id="p24">più suggestive di Roma.</p1>  
         <img id="chiesa_di_san_luigi_dei_francesi" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/chiesa_di_san_luigi_dei_francesi.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/chiesa_di_san_luigi_dei_francesi.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/chiesa_di_san_luigi_dei_francesi.mp4" type="audio/mp4">
     </div>
     <div id="Campidoglio">    
         <h1>CAMPIDOGLIO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Il Campidoglio è</p1>  
+        <p1 id="p2">una delle sette</p1>  
+        <p1 id="p3">colline di Roma</p1>  
+        <p1 id="p4">e ospita la celebre</p1>  
+        <p1 id="p5">piazza progettata</p1>  
+        <p1 id="p6">da Michelangelo.</p1>    
+
+        <p1 id="p7">Il Palazzo Senatorio,</p1>  
+        <p1 id="p8">il Palazzo dei Conservatori</p1>  
+        <p1 id="p9">e il Palazzo Nuovo</p1>  
+        <p1 id="p10">ospitano i Musei</p1>  
+        <p1 id="p11">Capitolini.</p1>    
+
+        <p1 id="p12">Al centro della piazza</p1>  
+        <p1 id="p13">si trova la copia</p1>  
+        <p1 id="p14">della statua equestre</p1>  
+        <p1 id="p15">di Marco Aurelio,</p1>  
+        <p1 id="p16">simbolo della città.</p1>    
+
+        <p1 id="p17">La scalinata della Cordonata</p1>  
+        <p1 id="p18">conduce dolcemente</p1>  
+        <p1 id="p19">alla piazza, offrendo</p1>  
+        <p1 id="p20">un panorama straordinario.</p1>    
+
+        <p1 id="p21">È il cuore politico</p1>  
+        <p1 id="p22">e artistico di Roma</p1>  
+        <p1 id="p23">fin dall’antichità.</p1>
+
         <img id="campidoglio" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/campidoglio.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/campidoglio.m4a" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/campidoglio.m4a" type="audio/mp4">
     </div>
     <div id="Isola tiberina">       
         <h1>ISOLA TIBERINA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="isola_tiberina" src=/home/alessio/Documents/WEB/web_roma/immagini/isola_tiberina.jpg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+         <p1 id="p1">Unica isola del</p1>  
+        <p1 id="p2">Tevere, l’Isola Tiberina</p1>  
+        <p1 id="p3">è un luogo ricco</p1>  
+        <p1 id="p4">di storia e leggende.</p1>    
+
+        <p1 id="p5">Fin dall’antichità</p1>  
+        <p1 id="p6">è stata legata</p1>  
+        <p1 id="p7">alla medicina, ospitando</p1>  
+        <p1 id="p8">l’ospedale Fatebenefratelli</p1>  
+        <p1 id="p9">e il Tempio di Esculapio.</p1>    
+
+        <p1 id="p10">Oggi è un’oasi</p1>  
+        <p1 id="p11">di tranquillità con</p1>  
+        <p1 id="p12">ristoranti, un cinema</p1>  
+        <p1 id="p13">all’aperto estivo</p1>  
+        <p1 id="p14">e suggestivi scorci.</p1>    
+
+        <p1 id="p15">I suoi ponti, il</p1>  
+        <p1 id="p16">Ponte Fabricio e</p1>  
+        <p1 id="p17">il Ponte Cestio,</p1>  
+        <p1 id="p18">la collegano alle</p1>  
+        <p1 id="p19">sponde del fiume.</p1>    
+
+        <p1 id="p20">Passeggiare qui regala</p1>  
+        <p1 id="p21">un’atmosfera magica,</p1>  
+        <p1 id="p22">lontana dal caos</p1>  
+        <p1 id="p23">della città.</p1>
+
+        <img id="isola_tiberina" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/isola_tiberina.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/isola_tiberina.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/isola_tiberina.mp4" type="audio/mp4">
     </div>
     <div id="Piazza di spagna">       
         <h1>PIAZZA DI SPAGNA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="piazza_di_spagna" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_di_spagna.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Simbolo di eleganza</p1>  
+        <p1 id="p2">e mondanità, Piazza</p1>  
+        <p1 id="p3">di Spagna è famosa</p1>  
+        <p1 id="p4">per la scenografica</p1>  
+        <p1 id="p5">scalinata di Trinità</p1>  
+        <p1 id="p6">dei Monti.</p1>    
+
+        <p1 id="p7">Al centro si trova</p1>  
+        <p1 id="p8">la Fontana della</p1>  
+        <p1 id="p9">Barcaccia, opera</p1>  
+        <p1 id="p10">barocca del Bernini.</p1>    
+
+        <p1 id="p11">La scalinata è il</p1>  
+        <p1 id="p12">punto d’incontro</p1>  
+        <p1 id="p13">preferito da turisti</p1>  
+        <p1 id="p14">e romani, soprattutto</p1>  
+        <p1 id="p15">in primavera con le</p1>  
+        <p1 id="p16">azalee fiorite.</p1>    
+
+        <p1 id="p17">Le vie circostanti,</p1>  
+        <p1 id="p18">come Via Condotti,</p1>  
+        <p1 id="p19">ospitano le boutique</p1>  
+        <p1 id="p20">delle grandi firme</p1>  
+        <p1 id="p21">della moda.</p1>    
+
+        <p1 id="p22">È una delle piazze</p1>  
+        <p1 id="p23">più amate e fotografate</p1>  
+        <p1 id="p24">al mondo.</p1>  
+
+        <img id="piazza_di_spagna" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_di_spagna.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_di_spagna.mp3" type="audio/mp3">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_di_spagna.mp3" type="audio/mp3">
     </div>
     <div id="Fontana la barcaccia">        
         <h1>FONTANA LA BARCACCIA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="fontana_la_barcaccia" src=/home/alessio/Documents/WEB/web_roma/immagini/fontana_della_barcaccia.jpg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Situata ai piedi</p1>  
+        <p1 id="p2">della Scalinata di</p1>  
+        <p1 id="p3">Piazza di Spagna,</p1>  
+        <p1 id="p4">la Fontana della</p1>  
+        <p1 id="p5">Barcaccia è un</p1>  
+        <p1 id="p6">capolavoro barocco.</p1>    
+
+        <p1 id="p7">Realizzata da Pietro</p1>  
+        <p1 id="p8">e Gian Lorenzo</p1>  
+        <p1 id="p9">Bernini nel XVII</p1>  
+        <p1 id="p10">secolo, ha la forma</p1>  
+        <p1 id="p11">di una barca</p1>  
+        <p1 id="p12">semi-affondata.</p1>    
+
+        <p1 id="p13">L’acqua che sgorga</p1>  
+        <p1 id="p14">dolcemente evoca</p1>  
+        <p1 id="p15">il Tevere in piena,</p1>  
+        <p1 id="p16">ispirata a un’alluvione</p1>  
+        <p1 id="p17">storica.</p1>    
+
+        <p1 id="p18">È uno dei simboli</p1>  
+        <p1 id="p19">più eleganti e</p1>  
+        <p1 id="p20">suggestivi di Roma.</p1>  
+        <img id="fontana_la_barcaccia" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/fontana_della_barcaccia.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/fontana_la_barcaccia.mp3" type="audio/mp3">
+          <source src="/https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/fontana_la_barcaccia.mp3" type="audio/mpeg">
     </div>
     <div id="Piazza san pietro">        
         <h1>PIAZZA SAN PIETRO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="piazza_san_pietro" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_san_pietro.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Cuore della cristianità,</p1>  
+        <p1 id="p2">Piazza San Pietro</p1>  
+        <p1 id="p3">è un capolavoro</p1>  
+        <p1 id="p4">progettato da Gian</p1>  
+        <p1 id="p5">Lorenzo Bernini nel</p1>  
+        <p1 id="p6">XVII secolo.</p1>    
+
+        <p1 id="p7">La sua imponente</p1>  
+        <p1 id="p8">colonnata abbraccia</p1>  
+        <p1 id="p9">simbolicamente i fedeli</p1>  
+        <p1 id="p10">che vi si radunano</p1>  
+        <p1 id="p11">per le benedizioni</p1>  
+        <p1 id="p12">papali.</p1>    
+
+        <p1 id="p13">Al centro si trova</p1>  
+        <p1 id="p14">l’obelisco egizio,</p1>  
+        <p1 id="p15">testimone della storia</p1>  
+        <p1 id="p16">millenaria della città.</p1>    
+
+        <p1 id="p17">La vista sulla</p1>  
+        <p1 id="p18">Basilica di San Pietro</p1>  
+        <p1 id="p19">la rende uno dei</p1>  
+        <p1 id="p20">luoghi più iconici</p1>  
+        <p1 id="p21">al mondo.</p1>  
+
+        <img id="piazza_san_pietro" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_san_pietro.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_san_pietro.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_san_pietro.mp4" type="audio/mp4">
     </div>
     <div id="Basilica di san pietro">        
         <h1>BASILICA DI SAN PIETRO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="basilica_di_san_pietro" src=/home/alessio/Documents/WEB/web_roma/immagini/basilica_di_san_pietro.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">La Basilica di San</p1>  
+        <p1 id="p2">Pietro è il cuore</p1>  
+        <p1 id="p3">della Chiesa cattolica</p1>  
+        <p1 id="p4">e uno dei massimi</p1>  
+        <p1 id="p5">esempi di architettura</p1>  
+        <p1 id="p6">rinascimentale.</p1>    
+
+        <p1 id="p7">La sua cupola,</p1>  
+        <p1 id="p8">progettata da Michelangelo,</p1>  
+        <p1 id="p9">domina il panorama</p1>  
+        <p1 id="p10">di Roma con imponenza.</p1>    
+
+        <p1 id="p11">Al suo interno</p1>  
+        <p1 id="p12">custodisce capolavori</p1>  
+        <p1 id="p13">come la Pietà</p1>  
+        <p1 id="p14">di Michelangelo</p1>  
+        <p1 id="p15">e il Baldacchino</p1>  
+        <p1 id="p16">di Bernini.</p1>    
+
+        <p1 id="p17">Milioni di pellegrini</p1>  
+        <p1 id="p18">visitano ogni anno</p1>  
+        <p1 id="p19">questo luogo sacro,</p1>  
+        <p1 id="p20">simbolo della fede</p1>  
+        <p1 id="p21">cristiana.</p1>  
+        <img id="basilica_di_san_pietro" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/basilica_di_san_pietro.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/basilica_di_san_pietro.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/basilica_di_san_pietro.mp4" type="audio/mp4">
     </div>
     <div id="Colosseo">        
         <h1>COLOSSEO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="colosseo" src=/home/alessio/Documents/WEB/web_roma/immagini/colosseo.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Simbolo eterno</p1>  
+        <p1 id="p2">di Roma, il</p1>  
+        <p1 id="p3">Colosseo è il</p1>  
+        <p1 id="p4">più grande anfiteatro</p1>  
+        <p1 id="p5">dell’antichità,</p1>  
+        <p1 id="p6">costruito nel I</p1>  
+        <p1 id="p7">secolo d.C.</p1>  
+        <p1 id="p8">Qui si svolgevano</p1>  
+        <p1 id="p9">combattimenti tra</p1>  
+        <p1 id="p10">gladiatori, spettacoli</p1>  
+        <p1 id="p11">e cacce alle belve</p1>  
+        <p1 id="p12">davanti a migliaia</p1>  
+        <p1 id="p13">di spettatori.</p1>  
+        <p1 id="p14">Ancora oggi le sue</p1>  
+        <p1 id="p15">imponenti rovine</p1>  
+        <p1 id="p16">raccontano la</p1>  
+        <p1 id="p17">grandezza dell’Impero</p1>  
+        <p1 id="p18">Romano.</p1>  
+        <p1 id="p19">È una delle sette</p1>  
+        <p1 id="p20">meraviglie del mondo</p1>  
+        <p1 id="p21">moderno e una delle</p1>  
+        <p1 id="p22">attrazioni più</p1>  
+        <p1 id="p23">visitate al mondo.</p1>
+        <img id="colosseo" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/colosseo.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/colosseo.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/colosseo.ogx" type="audio/ogg">
     </div>
     <div id="Altare della patria">       
         <h1>ALTARE DELLA PATRIA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="altare_della_patria" src=/home/alessio/Documents/WEB/web_roma/immagini/altare_della_patria.jpg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Situato in</p1>  
+        <p1 id="p2">Piazza Venezia,</p1>  
+        <p1 id="p3">l’Altare della</p1>  
+        <p1 id="p4">Patria è un</p1>  
+        <p1 id="p5">monumento</p1>  
+        <p1 id="p6">dedicato a</p1>  
+        <p1 id="p7">Vittorio Emanuele II,</p1>  
+        <p1 id="p8">primo re</p1>  
+        <p1 id="p9">d’Italia.</p1>  
+        <p1 id="p10">Imponente e</p1>  
+        <p1 id="p11">di marmo</p1>  
+        <p1 id="p12">bianco, ospita</p1>  
+        <p1 id="p13">la tomba del</p1>  
+        <p1 id="p14">Milite Ignoto,</p1>  
+        <p1 id="p15">simbolo del</p1>  
+        <p1 id="p16">sacrificio per</p1>  
+        <p1 id="p17">la patria.</p1>  
+        <p1 id="p18">La terrazza</p1>  
+        <p1 id="p19">panoramica</p1>  
+        <p1 id="p20">offre una</p1>  
+        <p1 id="p21">vista spettacolare</p1>  
+        <p1 id="p22">su Roma.</p1>  
+        <p1 id="p23">Spesso al centro</p1>  
+        <p1 id="p24">di celebrazioni</p1>  
+        <p1 id="p25">ufficiali, è uno</p1>  
+        <p1 id="p26">dei simboli</p1>  
+        <p1 id="p27">più importanti</p1>  
+        <p1 id="p28">dell’unità</p1>  
+        <p1 id="p29">nazionale.</p1>
+        
+        <img id="altare_della_patria" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/altare_della_patria.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/altare_della_patria.adts" type="audio/aac">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/altare_della_patria.adts" type="audio/aac">
     </div>
     <div id="Statua di marco aurelio">        
         <h1>STATUA DI MARCO AURELIO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="statua_di_marco_aurelio" src=/home/alessio/Documents/WEB/web_roma/immagini/statua_di_marco_aurelio.jpg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">La statua equestre di</p1>  
+        <p1 id="p2">Marco Aurelio è uno dei</p1>  
+        <p1 id="p3">capolavori più celebri</p1>  
+        <p1 id="p4">dell’antichità romana.</p1>  
+        <p1 id="p5">L’originale in bronzo</p1>  
+        <p1 id="p6">dorato è conservato</p1>  
+        <p1 id="p7">nei Musei Capitolini,</p1>  
+        <p1 id="p8">mentre una copia domina</p1>  
+        <p1 id="p9">Piazza del Campidoglio.</p1>  
+        <p1 id="p10">Rappresenta l’imperatore</p1>  
+        <p1 id="p11">come un sovrano saggio</p1>  
+        <p1 id="p12">e pacifico, più filosofo</p1>  
+        <p1 id="p13">che guerriero.</p1>  
+        <p1 id="p14">È una delle poche statue</p1>  
+        <p1 id="p15">equestri romane</p1>  
+        <p1 id="p16">sopravvissute, poiché</p1>  
+        <p1 id="p17">erroneamente identificata</p1>  
+        <p1 id="p18">come raffigurante</p1>  
+        <p1 id="p19">Costantino.</p1>
+        <img id="statua_di_marco_aurelio" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/statua_di_marco_aurelio.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/statua_di_marco_aurelio.mp3" type="audio/mp3">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/statua_di_marco_aurelio.mp3" type="audio/mp3">
     </div>
     <div id="Ara pacis">        
         <h1>ARA PACIS</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="ara_pacis" src=/home/alessio/Documents/WEB/web_roma/immagini/ara_pacis.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">L’Ara Pacis è un altare</p1>  
+        <p1 id="p2">monumentale dedicato alla</p1>  
+        <p1 id="p3">Pace Augustea, costruito</p1>  
+        <p1 id="p4">nel 9 a.C. Riccamente</p1>  
+        <p1 id="p5">decorato con bassorilievi,</p1>  
+        <p1 id="p6">celebra la prosperità e</p1>  
+        <p1 id="p7">la stabilità portate</p1>  
+        <p1 id="p8">dall’imperatore Augusto.</p1>  
+        <p1 id="p9">Oggi è custodita in un</p1>  
+        <p1 id="p10">moderno museo progettato</p1>  
+        <p1 id="p11">da Richard Meier, che la</p1>  
+        <p1 id="p12">valorizza con luce naturale.</p1>  
+        <p1 id="p13">È uno dei più straordinari</p1>  
+        <p1 id="p14">esempi di arte e propaganda</p1>  
+        <p1 id="p15">dell’epoca romana.</p1>
+        <img id="ara_pacis" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/ara_pacis.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/ara_pacis.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/ara_pacis.ogx" type="audio/ogg">
     </div>
     <div id="Tomba di augusto">       
         <h1>TOMBA DI AUGUSTO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="tomba_di_augusto" src=/home/alessio/Documents/WEB/web_roma/immagini/tomba_di_augusto.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">La Tomba di Augusto è</p1>  
+        <p1 id="p2">il grande mausoleo che</p1>  
+        <p1 id="p3">ospitava le spoglie del</p1>  
+        <p1 id="p4">primo imperatore di Roma.</p1>  
+        <p1 id="p5">Costruita nel 28 a.C.,</p1>  
+        <p1 id="p6">si trova vicino all’Ara</p1>  
+        <p1 id="p7">Pacis, nel cuore dell’antica</p1>  
+        <p1 id="p8">Urbe. Dopo secoli di</p1>  
+        <p1 id="p9">abbandono, è stata</p1>  
+        <p1 id="p10">recentemente restaurata</p1>  
+        <p1 id="p11">e riaperta al pubblico.</p1>  
+        <p1 id="p12">Il suo imponente cilindro</p1>  
+        <p1 id="p13">di pietra racconta la</p1>  
+        <p1 id="p14">storia gloriosa di Augusto</p1>  
+        <p1 id="p15">e della sua famiglia.</p1>
+
+        <img id="tomba_di_augusto" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/tomba_di_augusto.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/tomba_di_augusto.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/tomba_di_augusto.ogx" type="audio/ogg">
     </div>
     <div id="Bocca della verità">        
         <h1>BOCCA DELLA VERITÀ</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="bocca_della_verita" src=/home/alessio/Documents/WEB/web_roma/immagini/bocca_della_verita.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Misteriosa e affascinante,</p1>  
+        <p1 id="p2">la Bocca della Verità è un</p1>  
+        <p1 id="p3">antico mascherone di marmo</p1>  
+        <p1 id="p4">situato nella chiesa di</p1>  
+        <p1 id="p5">Santa Maria in Cosmedin.</p1>  
+        <p1 id="p6">Secondo la leggenda, morde</p1>  
+        <p1 id="p7">la mano di chi dice bugie,</p1>  
+        <p1 id="p8">attirando curiosi da</p1>  
+        <p1 id="p9">tutto il mondo.</p1>  
+        <p1 id="p10">Risalente al periodo romano,</p1>  
+        <p1 id="p11">la sua origine e funzione</p1>  
+        <p1 id="p12">esatta restano incerte.</p1>  
+        <p1 id="p13">È una delle attrazioni più</p1>  
+        <p1 id="p14">amate e fotografate di Roma.</p1>
+
+        <img id="bocca_della_verita" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/bocca_della_verita.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/bocca_della_verita.mp3" type="audio/mp3">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/bocca_della_verita.mp3" type="audio/mp3">
     </div>
     <div id="Teatro marcello">        
         <h1>TEATRO MARCELLO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="teatro_marcello" src=/home/alessio/Documents/WEB/web_roma/immagini/teatro_marcello.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Costruito sotto</p1>  
+        <p1 id="p2">Giulio Cesare e</p1>  
+        <p1 id="p3">completato da Augusto,</p1>  
+        <p1 id="p4">il Teatro Marcello è</p1>  
+        <p1 id="p5">un antico teatro</p1>  
+        <p1 id="p6">romano ancora visibile.</p1>  
+        <p1 id="p7">Con la sua elegante</p1>  
+        <p1 id="p8">struttura ad archi, ha</p1>  
+        <p1 id="p9">ispirato il Colosseo ed è</p1>  
+        <p1 id="p10">un gioiello dell’ingegneria</p1>  
+        <p1 id="p11">romana. Oggi ospita</p1>  
+        <p1 id="p12">concerti estivi e le sue</p1>  
+        <p1 id="p13">arcate inferiori sono</p1>  
+        <p1 id="p14">integrate in un palazzo</p1>  
+        <p1 id="p15">rinascimentale.</p1>  
+        <p1 id="p16">Passeggiare accanto alle</p1>  
+        <p1 id="p17">sue rovine è un tuffo</p1>  
+        <p1 id="p18">nella Roma imperiale.</p1>
+
+
+        <img id="teatro_marcello" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/teatro_marcello.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/teatro_marcello.mp3" type="audio/mp3">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/teatro_marcello.mp3" type="audio/mp3">
     </div>
     <div id="Palazzo madama">        
         <h1>PALAZZO MADAMA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="palazzo_madama" src=/home/alessio/Documents/WEB/web_roma/immagini/palazzo_madama.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Sede del Senato</p1>  
+        <p1 id="p2">della Repubblica</p1>  
+        <p1 id="p3">Italiana, Palazzo</p1>  
+        <p1 id="p4">Madama è un elegante</p1>  
+        <p1 id="p5">edificio rinascimentale</p1>  
+        <p1 id="p6">nel cuore di Roma.</p1>  
+        <p1 id="p7">Originariamente</p1>  
+        <p1 id="p8">appartenente ai Medici,</p1>  
+        <p1 id="p9">vanta interni sontuosi</p1>  
+        <p1 id="p10">e affreschi di grande</p1>  
+        <p1 id="p11">valore artistico.</p1>  
+        <p1 id="p12">La sua posizione centrale,</p1>  
+        <p1 id="p13">tra Piazza Navona e</p1>  
+        <p1 id="p14">il Pantheon, lo rende</p1>  
+        <p1 id="p15">un punto strategico</p1>  
+        <p1 id="p16">della vita politica</p1>  
+        <p1 id="p17">italiana. Il suo nome</p1>  
+        <p1 id="p18">deriva da Margherita</p1>  
+        <p1 id="p19">d'Austria, che vi</p1>  
+        <p1 id="p20">abitò nel Cinquecento.</p1>
+        <img id="palazzo_madama" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/palazzo_madama.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/palazzo_madama.m4a" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/palazzo_madama.m4a" type="audio/mp4">
     </div>
     <div id="Piazza di trevi">        
         <h1>PIAZZA DI TREVI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="piazza_di_trevi" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_di_trevi.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Piazza di Trevi è</p1>  
+        <p1 id="p2">celebri per ospitare</p1>  
+        <p1 id="p3">la magnifica Fontana</p1>  
+        <p1 id="p4">di Trevi, la più famosa</p1>  
+        <p1 id="p5">di Roma. Sempre affollata</p1>  
+        <p1 id="p6">di turisti, è il luogo</p1>  
+        <p1 id="p7">in cui si compie il rito</p1>  
+        <p1 id="p8">del lancio della monetina</p1>  
+        <p1 id="p9">per tornare nella città eterna.</p1>  
+        <p1 id="p10">Circondata da palazzi</p1>  
+        <p1 id="p11">storici, offre un’atmosfera</p1>  
+        <p1 id="p12">incantevole, soprattutto</p1>  
+        <p1 id="p13">di notte. Il suono dell’acqua</p1>  
+        <p1 id="p14">e l’illuminazione rendono</p1>  
+        <p1 id="p15">questo angolo di Roma unico</p1>  
+        <p1 id="p16">e suggestivo.</p1>
+
+        <img id="piazza_di_trevi" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_di_trevi.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_di_trevi.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_di_trevi.mp4" type="audio/mp4">
     </div>
     <div id="Villa adriana">        
         <h1>VILLA ADRIANA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="villa_adriana" src=/home/alessio/Documents/WEB/web_roma/immagini/villa_adriana.JPG alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Costruita dall’imperatore</p1>  
+        <p1 id="p2">Adriano a Tivoli, Villa</p1>  
+        <p1 id="p3">Adriana è un complesso</p1>  
+        <p1 id="p4">residenziale tra i più</p1>  
+        <p1 id="p5">raffinati dell’antichità.</p1>  
+        <p1 id="p6">Comprende palazzi, terme,</p1>  
+        <p1 id="p7">templi e giardini ispirati</p1>  
+        <p1 id="p8">all’architettura greca ed</p1>  
+        <p1 id="p9">egizia. Dichiarata Patrimonio</p1>  
+        <p1 id="p10">dell’Umanità UNESCO, è</p1>  
+        <p1 id="p11">un capolavoro dell’ingegneria</p1>  
+        <p1 id="p12">romana e della bellezza</p1>  
+        <p1 id="p13">paesaggistica. Visitandola,</p1>  
+        <p1 id="p14">si scopre il gusto sofisticato</p1>  
+        <p1 id="p15">di uno degli imperatori più</p1>  
+        <p1 id="p16">colti di Roma.</p1>
+
+        <img id="villa_adriana" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/villa_adriana.JPG" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/villa_adriana.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/villa_adriana.ogx" type="audio/ogg">
     </div>
     <div id="Largo argentina">        
         <h1>LARGO ARGENTINA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="largo_argentina" src=/home/alessio/Documents/WEB/web_roma/immagini/largo_argentina.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Largo di Torre Argentina è</p1>  
+        <p1 id="p2">un sito archeologico che</p1>  
+        <p1 id="p3">conserva i resti di quattro</p1>  
+        <p1 id="p4">templi repubblicani. È famoso</p1>  
+        <p1 id="p5">per essere il luogo dove</p1>  
+        <p1 id="p6">Giulio Cesare fu assassinato</p1>  
+        <p1 id="p7">nel 44 a.C. Oggi ospita</p1>  
+        <p1 id="p8">una colonia di gatti randagi,</p1>  
+        <p1 id="p9">accuditi da volontari,</p1>  
+        <p1 id="p10">che lo rendono ancora più</p1>  
+        <p1 id="p11">affascinante. È uno degli</p1>  
+        <p1 id="p12">angoli più suggestivi della</p1>  
+        <p1 id="p13">Roma antica, immerso nel</p1>  
+        <p1 id="p14">traffico moderno.</p1>
+
+        <img id="largo_argentina" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/largo_argentina.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/largo_argentina.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/largo_argentina.ogx" type="audio/ogg">
     </div>
     <div id="Fontana di trevi">
         <h1>FONTANA DI TREVI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="fontana_di_trevi" src=/home/alessio/Documents/WEB/web_roma/immagini/fontana_di_trevi.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">La Fontana di Trevi è</p1>  
+        <p1 id="p2">una delle fontane più</p1>  
+        <p1 id="p3">celebri di Roma, situata</p1>  
+        <p1 id="p4">in Piazza di Trevi. Realizzata</p1>  
+        <p1 id="p5">da Nicola Salvi e completata</p1>  
+        <p1 id="p6">nel 1762, è un capolavoro</p1>  
+        <p1 id="p7">del barocco che rappresenta</p1>  
+        <p1 id="p8">il dio Oceano circondato</p1>  
+        <p1 id="p9">da sculture di cavalli marini</p1>  
+        <p1 id="p10">e tritoni. La fontana è</p1>  
+        <p1 id="p11">famosa per la tradizione</p1>  
+        <p1 id="p12">di lanciare una moneta per</p1>  
+        <p1 id="p13">assicurarsi un ritorno nella</p1>  
+        <p1 id="p14">capitale.</p1>
+
+        <img id="fontana_di_trevi" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/fontana_di_trevi.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/fontana_di_trevi.mp4" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/fontana_di_trevi.mp4" type="audio/mp4">
 
 
     </div>
     <div id="Piazza navona e la fontana dei quattro fiumi">
-        <h1>PIAZZA NAVONA E LA FONTANA DEI QUATTRO FIUMI</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="piazza_navona_e_la_fontana_dei_quattro_fiumi" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_navona_e_la_fontana_dei_quattro_fiumi.jpg alt="boh"></img>
+        <h1 id="grande">PIAZZA NAVONA E LA FONTANA DEI QUATTRO FIUMI</h1>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Una delle piazze più belle</p1>  
+        <p1 id="p2">di Roma, Piazza Navona è</p1>  
+        <p1 id="p3">un capolavoro barocco</p1>  
+        <p1 id="p4">costruito sul perimetro</p1>  
+        <p1 id="p5">di un antico stadio romano.</p1>  
+        <p1 id="p6">Circondata da palazzi storici,</p1>  
+        <p1 id="p7">è animata da artisti</p1>  
+        <p1 id="p8">di strada, caffè e ristoranti.</p1>  
+        <p1 id="p9">Al centro si trova la celebre</p1>  
+        <p1 id="p10">Fontana dei Quattro Fiumi</p1>  
+        <p1 id="p11">di Bernini, simbolo della piazza.</p1>  
+        <p1 id="p12">Durante le festività natalizie,</p1>  
+        <p1 id="p13">si trasforma in un vivace mercato.</p1>  
+        <p1 id="p14">Capolavoro di Gian Lorenzo</p1>  
+        <p1 id="p15">Bernini, la Fontana dei</p1>  
+        <p1 id="p16">Quattro Fiumi è il cuore</p1>  
+        <p1 id="p17">di Piazza Navona. Rappresenta</p1>  
+        <p1 id="p18">i quattro grandi fiumi dei</p1>  
+        <p1 id="p19">continenti conosciuti all’epoca:</p1>  
+        <p1 id="p20">Nilo, Gange, Danubio e</p1>  
+        <p1 id="p21">Rio della Plata. Al centro</p1>  
+        <p1 id="p22">si erge un obelisco egizio,</p1>  
+        <p1 id="p23">che rafforza la monumentalità</p1>  
+        <p1 id="p24">della composizione. Le sue</p1>  
+        <p1 id="p25">statue dinamiche e il movimento</p1>  
+        <p1 id="p26">dell’acqua creano un effetto</p1>  
+        <p1 id="p27">scenografico straordinario.</p1>
+
+        <img id="piazza_navona_e_la_fontana_dei_quattro_fiumi" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_navona_e_la_fontana_dei_quattro_fiumi.jpg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_navona_e_la_fontana_dei_quattro_fiumi.ogx" type="audio/ogg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_navona_e_la_fontana_dei_quattro_fiumi.ogx" type="audio/ogg">
 
     </div>
    
     <div id="Piazza venezia">        
         <h1>PIAZZA VENEZIA</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="piazza_venezia" src=/home/alessio/Documents/WEB/web_roma/immagini/piazza_venezia.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Piazza Venezia è il</p1>  
+        <p1 id="p2">crocevia monumentale di</p1>  
+        <p1 id="p3">Roma, dominata dall’imponente</p1>  
+        <p1 id="p4">Altare della Patria. Al centro</p1>  
+        <p1 id="p5">si trova Palazzo Venezia,</p1>  
+        <p1 id="p6">da cui Mussolini teneva</p1>  
+        <p1 id="p7">i suoi celebri discorsi dal</p1>  
+        <p1 id="p8">balcone. È un punto nevralgico</p1>  
+        <p1 id="p9">del traffico cittadino, con</p1>  
+        <p1 id="p10">vista sul Campidoglio e sui</p1>  
+        <p1 id="p11">Fori Imperiali. La sua imponenza</p1>  
+        <p1 id="p12">la rende uno dei luoghi più</p1>  
+        <p1 id="p13">rappresentativi della città.</p1>
+        <img id="piazza_venezia" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/piazza_venezia.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/piazza_venezia.mp3" type="audio/mpeg">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/piazza_venezia.mp3" type="audio/mpeg">
 
     </div>
     <div id="Pantheon">        
         <h1>PANTHEON</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="pantheon" src=/home/alessio/Documents/WEB/web_roma/immagini/pantheon.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+
+
+        <p1 id="p1">Uno dei monumenti meglio</p1>  
+        <p1 id="p2">conservati dell’antichità,</p1>  
+        <p1 id="p3">il Pantheon è un capolavoro</p1>  
+        <p1 id="p4">dell’architettura romana.</p1>  
+        <p1 id="p5">La sua immensa cupola con</p1>  
+        <p1 id="p6">l’oculo centrale è un prodigio</p1>  
+        <p1 id="p7">ingegneristico, ispirazione</p1>  
+        <p1 id="p8">per molti edifici successivi.</p1>  
+        <p1 id="p9">Ospita le tombe di Raffaello</p1>  
+        <p1 id="p10">e di alcuni re d’Italia.</p1>  
+        <p1 id="p11">La sua atmosfera solenne</p1>  
+        <p1 id="p12">e la luce che filtra</p1>  
+        <p1 id="p13">dall’oculo lo rendono un</p1>  
+        <p1 id="p14">luogo magico.</p1>
+
+        <img id="pantheon" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/pantheon.jpeg" alt="boh"></img>
+        
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/fontana_di_trevi.mp4" type="audio/mp4">
-        <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/pantheon.m4a" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/pantheon.m4a" type="audio/mp4">
 
     </div>
     <div id="Gianicolo">        
         <h1>GIANICOLO</h1>
-        <button id="Home" onclick="showPage('home')">Home</button>
-        <p1></p1>
-        <img id="gianicolo" src=/home/alessio/Documents/WEB/web_roma/immagini/gianicolo.jpeg alt="boh"></img>
+        <button id="casa" onclick="showPage('home')">Home</button>
+        <p1 id="p1">Il Gianicolo è uno dei</p1>  
+        <p1 id="p2">punti panoramici più</p1>  
+        <p1 id="p3">spettacolari di Roma, con</p1>  
+        <p1 id="p4">una vista mozzafiato sulla</p1>  
+        <p1 id="p5">città. Qui si trova la statua</p1>  
+        <p1 id="p6">equestre di Garibaldi e il</p1>  
+        <p1 id="p7">celebri cannone che spara</p1>  
+        <p1 id="p8">a mezzogiorno. È un luogo</p1>  
+        <p1 id="p9">legato al Risorgimento italiano,</p1>  
+        <p1 id="p10">con monumenti dedicati ai</p1>  
+        <p1 id="p11">patrioti caduti. Le sue passeggiate</p1>  
+        <p1 id="p12">ombreggiate e il fascino storico</p1>  
+        <p1 id="p13">lo rendono una meta imperdibile.</p1>
+
+        <img id="gianicolo" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/gianicolo.jpeg" alt="boh"></img>
         <audio controls>
-          <source src="/home/alessio/Documents/WEB/web_roma/audio/gianicolo.m4a" type="audio/mp4">
+          <source src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/sounds/gianicolo.m4a" type="audio/mp4">
 
     </div>
     
@@ -698,10 +1459,10 @@ Home {
         function search() {
             let query = document.getElementById("searchBar").value;
             
-            // Nasconde tutte le sezioni prima di mostrare quella giusta
+            
             document.querySelectorAll('div').forEach(sec => sec.style.display = 'none');
             
-            // Trova e mostra la sezione corrispondente
+            
             let section = document.getElementById( query);
             if (section) {
                 section.style.display = "block";
