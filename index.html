@@ -1560,14 +1560,20 @@ p1 {
 
 
 
-        function filterDivs() {
-            let input = document.getElementById("search").value.toLowerCase();
-            let divs = document.querySelectorAll("div");
-
-        divs.forEach(div => {
-            let id = div.id.toLowerCase();
-            div.style.display = id.includes(input) ? "" : "none";
-            });
+        function search() {
+            let query = document.getElementById("searchBar").value;
+            
+            
+            document.querySelectorAll('div').forEach(sec => sec.style.display = 'none');
+            
+            
+            let section = document.getElementById( query);
+            if (section) {
+                section.style.display = "block";
+            } else {
+                showPage('niente') 
+		
+            }
         }
 
         showPage('home');
