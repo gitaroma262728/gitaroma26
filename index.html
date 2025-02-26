@@ -7,7 +7,7 @@
     <style>
 body {
     
-    background-color: #cfcfcf;
+    background-color: #f0faff;
 
 }    
 
@@ -455,8 +455,8 @@ p1 {
         <button id="V" onclick="showPage('venerdi')">Venerdi</button>
 	<img class="img-container" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/Mappa-Roma.jpg">
 	<img class="img-fissa" src="https://github.com/gitaroma262728/gitaroma26/raw/main/assets/images/Gita-roma-dietro.jpg">
-	<p1 id="p28">Questo e' il link per le presentazioni</p1>
-<p1 id="p29"><a href="https://docs.google.com/presentation/d/1tDqbKuWHeqcQe3dUAGJDlCZOKctkYk0uIsJn7lu8LwY/edit#slide=id.g337a33bbbff_0_191" target="_blank">
+	<p1 id="p35">Questo e' il link per le presentazioni</p1>
+        <p1 id="p36"><a href="https://docs.google.com/presentation/d/1tDqbKuWHeqcQe3dUAGJDlCZOKctkYk0uIsJn7lu8LwY/edit#slide=id.g337a33bbbff_0_191" target="_blank">
      Apri la presentazione
 </a></p1>
 
@@ -1527,7 +1527,11 @@ p1 {
     </div>
     
 
-
+    <div id="niente" >
+	<h1 id="blank">ERRORR 104</h1>
+	<p1 id="blanknotfound">Page not found("Godo")</p1>
+	<p1 id="advice">Se hai dei problemi clicca il tasto ? nella home</p1>
+	<buttom id="ritorna"><>
     </div>
     
          
@@ -1554,7 +1558,7 @@ p1 {
             if (section) {
                 section.style.display = "block";
             } else {
-                alert("Nessuna sezione trovata per il numero: " + query);
+                showPage('niente') 
             }
         }
         showPage('home');
