@@ -443,14 +443,16 @@ p1 {
    
 } 
 #blanknotfound {
-   text-align: center;
+   text-align:center;
+   
    font-size:20px;
    
    
 	
 } 
 #advice {
-   text-align:center;
+   position:fixed;
+   left:5px
 	
 } 
 
@@ -1551,7 +1553,7 @@ p1 {
 	<h1 id="blank">ERROR 104</h1>
 	<p1 id="blanknotfound">Page not found</p1>
 	<p1 id="advice">Se hai dei problemi clicca il tasto ?  nella home</p1>
-	<button id="ritorna">HOME</button>
+	<button id="ritorna" onclick=showPage('home')>HOME</button>
     </div>
     
          
