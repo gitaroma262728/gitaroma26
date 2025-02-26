@@ -7,7 +7,7 @@
     <style>
 body {
     
-    background-color: #f0ffff;
+    background-color: #a0d8ff;
 
 }    
 
@@ -37,7 +37,7 @@ input {
      outline: none;
 }
 button {
-     background-color: #cfcfcf;
+     background-color: none;
      color: black;
      border: none;
      padding: 8px 12px;
@@ -369,7 +369,7 @@ p1 {
 	
 } 
 #p35 {
-  position:fized;
+  position:fixed;
   top:670px;
   left:5px;
 } 
@@ -435,9 +435,10 @@ p1 {
     width: auto; 
 }
 #ritorna {
-   text-align: center;
+   
    position:fixed;
-   top:120px;
+   top:150px;
+   left:65px;
    font-size:30px;
    
 } 
@@ -1555,20 +1556,20 @@ p1 {
             // Mostra la pagina selezionata
             document.getElementById(pageId).style.display = 'block';
         }
-        function search() {
-            let query = document.getElementById("searchBar").value;
-            
-            
-            document.querySelectorAll('div').forEach(sec => sec.style.display = 'none');
-            
-            
-            let section = document.getElementById( query);
-            if (section) {
-                section.style.display = "block";
-            } else {
-                showPage('niente') 
-            }
+        
+
+
+
+        function filterDivs() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let divs = document.querySelectorAll("div");
+
+        divs.forEach(div => {
+            let id = div.id.toLowerCase();
+            div.style.display = id.includes(input) ? "" : "none";
+            });
         }
+</script>
         showPage('home');
     </script>
 </body>
