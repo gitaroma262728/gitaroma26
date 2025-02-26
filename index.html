@@ -411,15 +411,16 @@ p1 {
    top: 50px;
    left: 2px;
    Font-size:14px;
+   background:none;
+
 }
 #grande {
    font-size:30px;
 }
-#gio {
-   position: fixed;
-   top: 650px;
-   left: 150px;
-}
+#giorni {
+   text-align:center;
+   font-size:14px;
+   background:none;
 
 .img-container {
     position: fixed;
@@ -440,13 +441,14 @@ p1 {
    top:250px;
    left:150px;
    font-size:30px;
+   background:none;
    
 } 
 #notrovato {
    position:fixed;
-   left:120px;
+   left:100px;
    top:150px;
-   font-size:20px;
+   font-size:25px;
    
    
    
@@ -454,8 +456,8 @@ p1 {
 } 
 #advice {
    position:fixed;
-   left:70px;
-   top:170px;
+   left:5px;
+   top:180px;
    font-size:15px;
 
    
@@ -487,7 +489,7 @@ p1 {
         <p1 id="p36"><a href="https://docs.google.com/presentation/d/1tDqbKuWHeqcQe3dUAGJDlCZOKctkYk0uIsJn7lu8LwY/edit#slide=id.g337a33bbbff_0_191" target="_blank">
      Apri la presentazione
 </a></p1>
-	<button id="aiuto" onclick="('help')"></button>
+	<button id="aiuto" onclick="showPage('help')">?</button>
 
     </div>
 
@@ -515,7 +517,7 @@ p1 {
          <h2 id="sera">Sera</h2>
          <button id="a" onclick="showPage('Trastevere')">Trastevere</button>
          <button id="a" onclick="showPage('Gianicolo')">Gianicolo</button>
-	 <button id="casa" onclick="showPage('home')">HOME</button>
+	 <button id="giorni" onclick="showPage('home')">HOME</button>
          
 
 
@@ -546,7 +548,7 @@ p1 {
          <button id="b" onclick="showPage('Fontana la barcaccia')">Fontana la barcaccia</button>
          <button id="b" onclick="showPage('Piazza di trevi')">Piazza di trevi</button>
          <button id="b" onclick="showPage('Fontana di trevi')">Fontana di trevi</button>
-	 <button id="casa" onclick="showPage('home')">HOME</button>
+	 <button id="giorni" onclick="showPage('home')">HOME</button>
 
          
  
@@ -561,7 +563,7 @@ p1 {
 	<br>
 	<h2 id="mattina">Mattina</h2>
          <button id="c" onclick="showPage('Villa adriana')">Villa adriana</button>
-	 <button id="casa" onclick="showPage('home')">HOME</button>
+	 <button id="giorni" onclick="showPage('home')">HOME</button>
     </div>
 
     <div id="Fori imperiali">        
